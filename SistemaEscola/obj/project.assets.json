@@ -7257,11 +7257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Android\\Desktop\\SistemaEscola\\SistemaEscola\\SistemaEscola\\SistemaEscola.csproj",
+      "projectUniqueName": "C:\\Users\\Android\\Documents\\GitHub\\Sistema_Escola\\SistemaEscola\\SistemaEscola.csproj",
       "projectName": "SistemaEscola",
-      "projectPath": "C:\\Users\\Android\\Desktop\\SistemaEscola\\SistemaEscola\\SistemaEscola\\SistemaEscola.csproj",
+      "projectPath": "C:\\Users\\Android\\Documents\\GitHub\\Sistema_Escola\\SistemaEscola\\SistemaEscola.csproj",
       "packagesPath": "C:\\Users\\Android\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Android\\Desktop\\SistemaEscola\\SistemaEscola\\SistemaEscola\\obj\\",
+      "outputPath": "C:\\Users\\Android\\Documents\\GitHub\\Sistema_Escola\\SistemaEscola\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -27,19 +27,20 @@ namespace SistemaEscola.Controllers
         }
 
         // GET: InstituicaoController/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(long? id)
         {
 
             if (id == null)
             {
                 return NotFound();
             }
-            var departamento = await _context.Departamentos.SingleOrDefaultAsync(m => m.InstituicaoID == id);
-            if (departamento == null)
+            var instituicao = await _context.Departamentos.SingleOrDefaultAsync(m => m.InstituicaoID == id);
+            if (instituicao == null)
             {
                 return NotFound();
             }
-            return View(departamento);
+           
+            return View(instituicao);
         }
 
         // GET: InstituicaoController/Create
@@ -70,7 +71,7 @@ namespace SistemaEscola.Controllers
         }
 
         // GET: InstituicaoController/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
             {
@@ -87,7 +88,7 @@ namespace SistemaEscola.Controllers
         // POST: InstituicaoController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long? id, [Bind("Nome,Turno ,InstituicaoID")] IFormCollection instituicao)
+        public async Task<IActionResult> Edit(long? id, [Bind("Nome,Turno ,InstituicaoID")] Instituicao instituicao)
         {
             if (id != instituicao.InstituicaoID)
             {
@@ -103,7 +104,7 @@ namespace SistemaEscola.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InstuicaoExists(instituicao.InstituicaoID))
+                    if (!InstituicaoExists(instituicao.InstituicaoID))
                     {
                         return NotFound();
                     }
@@ -111,11 +112,19 @@ namespace SistemaEscola.Controllers
                     {
                         throw;
                     }
+                    
+                    return RedirectToAction(nameof(Index));
                 }
-            return RedirectToAction(nameof(Index));
-        };
+         
+            return View(instituicao);
+      
+        }
 
-        return View(instituicao);
+
+        private bool InstituicaoExists(long? id)
+        {
+            return _context.Instituicoes.Any(e => e.InstituicaoID == id);
+        }
 
         // GET: InstituicaoController/Delete/5
         public async Task<IActionResult> Delete(long? id)
@@ -129,22 +138,24 @@ namespace SistemaEscola.Controllers
             {
                 return NotFound();
             }
-            return View(instituicao);
+            return View();
         }
 
         // POST: InstituicaoController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public Task<IActionResult> Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> Delete(long? id, IFormCollection collection)
         {
-            try
+            if (id == null)
             {
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
-            catch
+            var instituicao = _context.Instituicoes.SingleOrDefaultAsync(m => m.InstituicaoID == id);
+            if (instituicao == null)
             {
-                return View();
+                return NotFound();
             }
+            return View(instituicao);
         }
     }
 }

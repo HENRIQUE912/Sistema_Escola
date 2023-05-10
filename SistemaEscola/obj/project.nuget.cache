@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FmUZHAlgIoXGGvYWuJS0+/2zdI3+9WCyfG884LYqu/DcImIYPQnOV5aGRF93sXY/baK+rQZExpVP/Kpz0PKYhg==",
+  "dgSpecHash": "YD0sZUgcbenaLErHdOeU5woGQlMSeJn/eaWhLgpbD6mJxjQGDRUyyFW2FEfqDnyNlwGNbZ2y+WzZwO3q5TZ+Hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Android\\Desktop\\SistemaEscola\\SistemaEscola\\SistemaEscola\\SistemaEscola.csproj",
+  "projectFilePath": "C:\\Users\\Android\\Documents\\GitHub\\Sistema_Escola\\SistemaEscola\\SistemaEscola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Android\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Android\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
