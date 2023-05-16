@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaEscola.Controllers;
 using SistemaEscola.Models;
 using SistemaEscola.Models.Infra;
 using System;

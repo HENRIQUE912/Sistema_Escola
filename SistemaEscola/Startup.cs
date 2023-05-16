@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SistemaEscola.Controllers;
 using SistemaEscola.Data;
 using SistemaEscola.Models.Infra;
 using System;

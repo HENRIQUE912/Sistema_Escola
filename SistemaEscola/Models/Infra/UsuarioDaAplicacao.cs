@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemaEscola.Models.Infra
 {
-    public class IESContext : IdentityUser
+    public class UsuarioDaAplicacao : IdentityUser
     {
     }
 }
