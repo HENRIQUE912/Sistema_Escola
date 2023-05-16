@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaEscola.Data;
@@ -9,7 +10,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SistemaEscola.Controllers
-{
+{   
+    [Authorize]
     public class InstituicaoController : Controller
     {
 

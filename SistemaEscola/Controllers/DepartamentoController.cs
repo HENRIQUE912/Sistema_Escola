@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SistemaEscola.Data;
 using SistemaEscola.Models;
@@ -8,7 +9,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SistemaEscola.Controllers
-{
+{   
+    [Authorize]
     public class DepartamentoController : Controller
     {
         //public IActionResult Index()

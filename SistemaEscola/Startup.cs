@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SistemaEscola.Data;
+using SistemaEscola.Models.Infra;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,18 @@ namespace SistemaEscola
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentity<UsuarioDaAplicacao, IdentityRole>()
+            .AddEntityFrameworkStores<IESContext>()
+            .AddDefaultTokenProviders();
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Infra/Acessar";
+                options.AccessDeniedPath = "/Infra/AcessoNegado";
+
+            });
+
+            
             //services.AddControllersWithViews();
 
             //configura a conexao para o acesso ao banco dados
