@@ -45,7 +45,12 @@ namespace SistemaEscola.Controllers
         ViewData["ReturnUrl"] = returnUrl;
         return View();
     }
-}
+        public IActionResult RegistrarNovoUsuario(string returnUrl = null)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+            return View();
+        }
+    }
 }
 
 

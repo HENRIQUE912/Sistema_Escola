@@ -1322,3 +1322,8 @@ C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\
 C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\ref\SistemaEscola.dll
 C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\SistemaEscola.pdb
 C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\SistemaEscola.genruntimeconfig.cache
+C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\SistemaEscola.csproj.AssemblyReference.cache
+C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\Razor\Views\Infra\RegistrarNovoUsuario.cshtml.g.cs
+C:\Users\Android\Documents\GitHub\Sistema_Escola\SistemaEscola\obj\Debug\net5.0\Razor\Views\Infra\Acessar.cshtml.g.cs
