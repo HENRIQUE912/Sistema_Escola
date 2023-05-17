@@ -1,6 +1,6 @@
 ﻿@model SistemaEscola.Models.Infra.RegistrarNovoUsuarioViewModel
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 <div class="card-header text-white bg-secondary text-center h1">Registrar uma nova conta de usuário</div>
 <div class="row">
@@ -30,9 +30,7 @@
     <div class="col-md-4">
     </div>
 </div>
-@section Script {
+@section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
-
-
 }
 
